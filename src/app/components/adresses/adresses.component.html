@@ -1,1 +1,9 @@
-<p>adresses works!</p>
+<div class="basic-container">
+    <h2>Liste des Adresses</h2>
+
+    <mat-card>
+        <mat-action-list *ngFor="let adresse of adresses$ | async">
+            <p mat-list-item>{{adresse.Appartement}}</p>
+        </mat-action-list>
+    </mat-card>
+</div>
