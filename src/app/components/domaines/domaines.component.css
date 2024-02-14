@@ -1,0 +1,7 @@
+.lien-espace{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    margin-left: 1100px;
+}

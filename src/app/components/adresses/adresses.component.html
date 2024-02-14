@@ -3,7 +3,7 @@
 
     <mat-card>
         <mat-action-list *ngFor="let adresse of adresses$ | async">
-            <p mat-list-item>{{adresse.Appartement}}</p>
+            <button mat-list-item>n°{{adresse.appartement}}, {{adresse.rue}}, {{adresse.codePostale}} {{adresse.ville}}, {{adresse.pays}}</button>
         </mat-action-list>
     </mat-card>
 </div>

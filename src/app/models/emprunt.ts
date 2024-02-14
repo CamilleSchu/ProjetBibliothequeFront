@@ -3,10 +3,10 @@ import { Livre } from "./livre";
 
 export interface Emprunt {
     id: number;
-    DateEmprunt: Date;
-    DateRetour: Date;
-    LivreId: number;
-    LecteurId: number;
-    Livre: Livre;
-    Lecteur: Lecteur
+    dateEmprunt: Date;
+    dateRetour: Date;
+    livreId: number;
+    lecteurId: number;
+    livre: Livre;
+    lecteur: Lecteur
 }

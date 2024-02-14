@@ -1,8 +1,8 @@
 import { Livre } from "./livre";
 
-export interface Domaines {
+export interface Domaine {
     id: number;
-    Nom: string;
-    Description: string;
-    Livres: Livre[];
+    nom: string;
+    description: string;
+    livres: Livre[];
 }

@@ -1,1 +1,13 @@
-<p>emprunts works!</p>
+<div class="basic-container">
+    <h2>Liste des Emprunts</h2>
+
+    <mat-card>
+        <mat-action-list *ngFor="let emprunt of emprunts$ | async">
+            <button mat-list-item>
+                Date de l'emprunt : {{emprunt.dateEmprunt | date: 'fullDate'}},
+                Date de retour : {{emprunt.dateRetour | date: 'fullDate'}},
+                Emprunteur : {{emprunt.lecteur.nom}} {{emprunt.lecteur.prenom}},
+                Livre emprunté {{emprunt.livre.titre}}</button>
+        </mat-action-list>
+    </mat-card>
+</div>

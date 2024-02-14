@@ -1,1 +1,17 @@
-<p>domaines works!</p>
+<div class="basic-container">
+    <h2>Liste des domaines</h2>
+    <a href="">créer</a>
+
+    <mat-card>
+        <mat-action-list *ngFor="let domaine of domaines$ | async">
+            <div>
+                {{domaine.nom}}
+                <div class="lien-espace">
+                    <a href="">detail</a> | 
+                    <a href="">supprimer</a> | 
+                    <a href="">modifier</a>
+                </div>
+            </div>
+        </mat-action-list>
+    </mat-card>
+</div>

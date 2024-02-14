@@ -1,1 +1,9 @@
-<p>livres works!</p>
+<div class="basic-container">
+    <h2>Liste des lecteurs</h2>
+
+    <mat-card>
+        <mat-action-list *ngFor="let livre of livres$ | async">
+            <button mat-list-item>{{livre.titre}}, {{livre.auteur.nom}} {{livre.etat}}</button>
+        </mat-action-list>
+    </mat-card>
+</div>

@@ -1,1 +1,9 @@
-<p>lecteurs works!</p>
+<div class="basic-container">
+    <h2>Liste des Lecteurs</h2>
+
+    <mat-card>
+        <mat-action-list *ngFor="let lecteur of lecteurs$ | async">
+            <button mat-list-item>{{lecteur.prenom}}, {{lecteur.nom}}, {{lecteur.adresse.ville}}</button>
+        </mat-action-list>
+    </mat-card>
+</div>

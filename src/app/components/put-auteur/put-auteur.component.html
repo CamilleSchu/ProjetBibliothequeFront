@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-form-field>
+        <mat-label>Nom</mat-label>
+        <input matInput type="text" [formControl]="nom" >
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prenom</mat-label>
+        <input matInput id="prenom" [formControl]="prenom">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput id="email" [formControl]="email">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Telephone</mat-label>
+        <input matInput id="telephone" [formControl]="telephone">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Grade</mat-label>
+        <input matInput id="grade" [formControl]="grade">
+    </mat-form-field>
+    <button mat-raised-button (click)="EditAuteur()">Modifier</button>
+</mat-card>

@@ -1,8 +1,11 @@
+import { Adresse } from "./adresse";
+
 export interface Lecteur {
     id: number;
-    Nom: string;
-    Prenom: string;
-    Email: string;
-    Telephone: string;
-    AdresseId: number;
+    nom: string;
+    prenom: string;
+    email: string;
+    telephone: string;
+    adresseId: number;
+    adresse: Adresse;
 }
