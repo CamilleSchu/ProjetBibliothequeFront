@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-form-field>
+        <mat-label>Titre</mat-label>
+        <input matInput id="titre" [formControl]="titre">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nombre de pages</mat-label>
+        <input matInput id="nombrepages" [formControl]="nombrepages">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Etat</mat-label>
+        <input matInput id="etat" [formControl]="etat">
+    </mat-form-field>
+    <!-- <mat-form-field>
+        <mat-label>L'id de l'auteur</mat-label>
+        <input matInput id="auteurId" [formControl]="auteurId">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>L'id du domaine</mat-label>
+        <input matInput id="DomaineId" [formControl]="DomaineId">
+    </mat-form-field> -->
+    <button mat-raised-button (click)="createLivre()">Créer</button>
+</mat-card>

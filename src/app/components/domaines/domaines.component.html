@@ -1,17 +1,15 @@
 <div class="basic-container">
     <h2>Liste des domaines</h2>
-    <a href="">créer</a>
+    <a href="/domaines/create">Ajouter un domaine</a>
 
     <mat-card>
         <mat-action-list *ngFor="let domaine of domaines$ | async">
-            <div>
+            <button mat-list-item>
                 {{domaine.nom}}
-                <div class="lien-espace">
-                    <a href="">detail</a> | 
-                    <a href="">supprimer</a> | 
-                    <a href="">modifier</a>
-                </div>
-            </div>
+                    <a href="/domaines/{{domaine.id}}">detail</a> | 
+                    <a href="/domaines/delete/{{domaine.id}}">supprimer</a> | 
+                    <a href="/domaines/modifier/{{domaine.id}}">modifier</a>
+            </button>
         </mat-action-list>
     </mat-card>
 </div>

@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-form-field>
+        <mat-label>Nom</mat-label>
+        <input matInput id="nom" [formControl]="nom">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prenom</mat-label>
+        <input matInput id="prenom" [formControl]="description">
+    </mat-form-field>
+    <button mat-raised-button (click)="createDomaine()">Créer</button>
+</mat-card>

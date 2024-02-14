@@ -8,11 +8,6 @@ export interface Livre {
     titre: string;
     nombrepages: string;
     etat: string;
-    auteur: Auteur;
-    domaine: Domaine;
-    lecteurs: Lecteur[];
-    emprunts: Emprunt[];
     auteurId: number;
     DomaineId: number;
-
 }

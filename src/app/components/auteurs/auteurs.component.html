@@ -3,9 +3,11 @@
     <a href="/auteurs/create">Ajouter un auteur</a>
     <mat-card>
         <mat-action-list *ngFor="let auteur of auteurs$ | async">
-            <button mat-list-item>{{auteur.nom}} {{auteur.prenom}} <a href="/auteurs/{{auteur.id}}">Detail</a> | 
+            <button mat-list-item>{{auteur.nom}} {{auteur.prenom}} 
+                <a href="/auteurs/{{auteur.id}}">Detail</a> | 
                 <a href="/auteurs/delete/{{auteur.id}}">Supprimer</a> | 
-                <a href="/auteurs/modifier/{{auteur.id}}">Modifier</a></button>
+                <a href="/auteurs/modifier/{{auteur.id}}">Modifier</a> | 
+                <a href="/livres/create/{{auteur.id}}">Ajouter un livre à l'auteur</a></button>
         </mat-action-list>
     </mat-card>
 </div>
